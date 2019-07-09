@@ -7,9 +7,9 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
       <Header
-       // leftComponent={{ icon: 'menu', color: '#fff' }}
+        containerStyle={{
+          backgroundColor: '#1894a3'}}
         centerComponent={{ text: 'Books', style: { color: '#fff',fontSize:20 } }}
-       // rightComponent={{ icon: 'home', color: '#fff' }}
       />
       <ScrollView
         style={styles.container}
@@ -26,8 +26,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
   },
   contentContainer: {
       paddingTop: 0,

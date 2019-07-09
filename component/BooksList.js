@@ -70,13 +70,7 @@ export default class BooksList extends Component {
         const { search } = this.state;
         return (
             <View>
-                {/* <SearchBar
-                    placeholder="Type Here..."
-                    onChangeText={this.updateSearch}
-                    value={search}
-                    barStyle="default"
-                    showsCancelButtonWhileEditing={true}
-                /> */}
+                
                 <FlatList
                     data={this.state.dataSource}
                     renderItem={this.renderItem}
